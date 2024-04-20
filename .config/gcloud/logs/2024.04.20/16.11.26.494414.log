@@ -1,0 +1,41 @@
+2024-04-20 16:11:26,495 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2024-04-20 16:11:26,497 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'update']
+2024-04-20 16:11:26,500 DEBUG    root            Running [gcloud.components.update] with arguments: []
+2024-04-20 16:11:28,041 INFO     ___FILE_ONLY___ Beginning update. This process may take several minutes.
+
+2024-04-20 16:11:28,050 DEBUG    root            (gcloud.components.update) 
+You cannot perform this action because the Google Cloud CLI component manager 
+is disabled for this installation. You can run the following command 
+to achieve the same result for this installation: 
+
+sudo apt-get update && sudo apt-get --only-upgrade install google-cloud-cli-istioctl google-cloud-cli-spanner-emulator google-cloud-cli-gke-gcloud-auth-plugin google-cloud-cli-config-connector google-cloud-cli-app-engine-go google-cloud-cli-app-engine-grpc google-cloud-cli-docker-credential-gcr google-cloud-cli-package-go-module google-cloud-cli-local-extract google-cloud-cli google-cloud-cli-bigtable-emulator google-cloud-cli-cloud-run-proxy google-cloud-cli-log-streaming google-cloud-cli-firestore-emulator google-cloud-cli-terraform-tools google-cloud-cli-skaffold google-cloud-cli-nomos google-cloud-cli-app-engine-java google-cloud-cli-minikube google-cloud-cli-spanner-migration-tool google-cloud-cli-app-engine-python google-cloud-cli-kubectl-oidc google-cloud-cli-kpt kubectl google-cloud-cli-harbourbridge google-cloud-cli-anthos-auth google-cloud-cli-cbt google-cloud-cli-enterprise-certificate-proxy google-cloud-cli-pubsub-emulator google-cloud-cli-app-engine-python-extras google-cloud-cli-datastore-emulator google-cloud-cli-cloud-build-local
+
+Traceback (most recent call last):
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/surface/components/update.py", line 125, in Run
+    update_manager.Update(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 1013, in Update
+    self._CheckIfDisabledAndThrowError(command='update-all')
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 636, in _CheckIfDisabledAndThrowError
+    raise UpdaterDisabledError(mapping_message)
+googlecloudsdk.core.updater.update_manager.UpdaterDisabledError: 
+You cannot perform this action because the Google Cloud CLI component manager 
+is disabled for this installation. You can run the following command 
+to achieve the same result for this installation: 
+
+sudo apt-get update && sudo apt-get --only-upgrade install google-cloud-cli-istioctl google-cloud-cli-spanner-emulator google-cloud-cli-gke-gcloud-auth-plugin google-cloud-cli-config-connector google-cloud-cli-app-engine-go google-cloud-cli-app-engine-grpc google-cloud-cli-docker-credential-gcr google-cloud-cli-package-go-module google-cloud-cli-local-extract google-cloud-cli google-cloud-cli-bigtable-emulator google-cloud-cli-cloud-run-proxy google-cloud-cli-log-streaming google-cloud-cli-firestore-emulator google-cloud-cli-terraform-tools google-cloud-cli-skaffold google-cloud-cli-nomos google-cloud-cli-app-engine-java google-cloud-cli-minikube google-cloud-cli-spanner-migration-tool google-cloud-cli-app-engine-python google-cloud-cli-kubectl-oidc google-cloud-cli-kpt kubectl google-cloud-cli-harbourbridge google-cloud-cli-anthos-auth google-cloud-cli-cbt google-cloud-cli-enterprise-certificate-proxy google-cloud-cli-pubsub-emulator google-cloud-cli-app-engine-python-extras google-cloud-cli-datastore-emulator google-cloud-cli-cloud-build-local
+
+
+2024-04-20 16:11:28,053 ERROR    root            (gcloud.components.update) 
+You cannot perform this action because the Google Cloud CLI component manager 
+is disabled for this installation. You can run the following command 
+to achieve the same result for this installation: 
+
+sudo apt-get update && sudo apt-get --only-upgrade install google-cloud-cli-istioctl google-cloud-cli-spanner-emulator google-cloud-cli-gke-gcloud-auth-plugin google-cloud-cli-config-connector google-cloud-cli-app-engine-go google-cloud-cli-app-engine-grpc google-cloud-cli-docker-credential-gcr google-cloud-cli-package-go-module google-cloud-cli-local-extract google-cloud-cli google-cloud-cli-bigtable-emulator google-cloud-cli-cloud-run-proxy google-cloud-cli-log-streaming google-cloud-cli-firestore-emulator google-cloud-cli-terraform-tools google-cloud-cli-skaffold google-cloud-cli-nomos google-cloud-cli-app-engine-java google-cloud-cli-minikube google-cloud-cli-spanner-migration-tool google-cloud-cli-app-engine-python google-cloud-cli-kubectl-oidc google-cloud-cli-kpt kubectl google-cloud-cli-harbourbridge google-cloud-cli-anthos-auth google-cloud-cli-cbt google-cloud-cli-enterprise-certificate-proxy google-cloud-cli-pubsub-emulator google-cloud-cli-app-engine-python-extras google-cloud-cli-datastore-emulator google-cloud-cli-cloud-build-local
+
+

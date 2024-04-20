@@ -1,0 +1,63 @@
+2024-04-20 16:10:46,080 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2024-04-20 16:10:46,095 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'install']
+2024-04-20 16:10:46,098 DEBUG    root            Running [gcloud.components.install] with arguments: [COMPONENT-IDS:5: "['kubectl', 'kustomize', 'kpt', 'anthoscli', 'beta']"]
+2024-04-20 16:10:46,109 DEBUG    root            (gcloud.components.install) 
+You cannot perform this action because the Google Cloud CLI component manager 
+is disabled for this installation. You can run the following command 
+to achieve the same result for this installation: 
+
+sudo apt-get install kubectl google-cloud-cli-kpt google-cloud-cli google-cloud-cli
+
+
+The kustomize component(s) is unavailable through the packaging system 
+you are currently using. Please consider using a separate installation 
+of the Google Cloud CLI created through the default mechanism described at: 
+
+https://cloud.google.com/sdk/ 
+
+Traceback (most recent call last):
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/surface/components/install.py", line 90, in Run
+    update_manager.Install(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 974, in Install
+    return self.Update(
+           ^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 1010, in Update
+    self._CheckIfDisabledAndThrowError(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 636, in _CheckIfDisabledAndThrowError
+    raise UpdaterDisabledError(mapping_message)
+googlecloudsdk.core.updater.update_manager.UpdaterDisabledError: 
+You cannot perform this action because the Google Cloud CLI component manager 
+is disabled for this installation. You can run the following command 
+to achieve the same result for this installation: 
+
+sudo apt-get install kubectl google-cloud-cli-kpt google-cloud-cli google-cloud-cli
+
+
+The kustomize component(s) is unavailable through the packaging system 
+you are currently using. Please consider using a separate installation 
+of the Google Cloud CLI created through the default mechanism described at: 
+
+https://cloud.google.com/sdk/ 
+
+
+2024-04-20 16:10:46,122 ERROR    root            (gcloud.components.install) 
+You cannot perform this action because the Google Cloud CLI component manager 
+is disabled for this installation. You can run the following command 
+to achieve the same result for this installation: 
+
+sudo apt-get install kubectl google-cloud-cli-kpt google-cloud-cli google-cloud-cli
+
+
+The kustomize component(s) is unavailable through the packaging system 
+you are currently using. Please consider using a separate installation 
+of the Google Cloud CLI created through the default mechanism described at: 
+
+https://cloud.google.com/sdk/ 
+
+

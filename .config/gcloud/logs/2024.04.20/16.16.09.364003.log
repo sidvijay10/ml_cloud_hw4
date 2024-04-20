@@ -1,0 +1,14 @@
+2024-04-20 16:16:09,367 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2024-04-20 16:16:09,369 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2024-04-20 16:16:09,428 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "ml-cloud-hw4-final", --zone: "us-central1-c", NAME: "cluster-2"]
+2024-04-20 16:16:09,447 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2024-04-20 16:16:09,450 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2024-04-20 16:16:09,544 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/ml-cloud-hw4-final/locations/us-central1-c/clusters/cluster-2?alt=json HTTP/1.1" 200 None
+2024-04-20 16:16:09,572 DEBUG    root            Saved kubeconfig to /home/sv2637/.kube/config
+2024-04-20 16:16:09,572 INFO     ___FILE_ONLY___ kubeconfig entry generated for cluster-2.
+
+2024-04-20 16:16:09,573 DEBUG    root            Chosen display Format:default
+2024-04-20 16:16:09,573 INFO     root            Display format: "default"
+2024-04-20 16:16:09,574 DEBUG    root            SDK update checks are disabled.
+2024-04-20 16:16:09,577 DEBUG    root            Metrics reporting process started...

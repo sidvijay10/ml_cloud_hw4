@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mnist-inference
+spec:
+  selector:
+    matchLabels:
+      app: mnist-inference
+  template:
+    metadata:
+      labels:
+        app: mnist-inference
+    spec:
+      containers:
+      - name: mnist-inference
+        image: gcr.io/ml-cloud-hw4-final/mnist-inference:latest
+        ports:
+        - containerPort: 5000
+        volumeMounts:
+        - mountPath: "/mnt/mnist_model"
+          name: mnist-model-volume
+      volumes:
+      - name: mnist-model-volume
+        persistentVolumeClaim:
+          claimName: mnist-model-pvc

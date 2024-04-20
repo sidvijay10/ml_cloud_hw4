@@ -1,0 +1,32 @@
+2024-04-20 18:33:49,853 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-04-20 18:33:49,858 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2024-04-20 18:33:49,860 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2024-04-20 18:33:49,921 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2024-04-20 18:33:49,923 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2024-04-20 18:33:50,010 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2024-04-20 18:33:50,026 DEBUG    root            Chosen display Format:default json
+2024-04-20 18:33:50,026 INFO     root            Display format: "default json"
+2024-04-20 18:33:50,070 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "core": {
+        "account": "sv2637@columbia.edu",
+        "disable_usage_reporting": "False",
+        "project": "ml-cloud-hw4-final"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0Ad52N3_X1papvqz7K9OIy_0bxOLej927icB0NKqGbAbtY5DkflRW9cyj_F9w6UgSESNNmuSvvGByz9YyfkMRvjjR1I88jtleej3PiSlPJfOsT7hDsqi17KIFoSa63iHw2X9fGXH3n5PVWMJ1SdaEQqiwPuQhTxXr_WH0-mvo7waCgYKAUsSARESFQHGX2MiD9Ux60L5KLXCg8jgqDDx6g0177",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjZjZTExYWVjZjllYjE0MDI0YTQ0YmJmZDFiY2Y4YjMyYTEyMjg3ZmEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEyODI4NTE1Njk4MTEzNjI3MDY4IiwiaGQiOiJjb2x1bWJpYS5lZHUiLCJlbWFpbCI6InN2MjYzN0Bjb2x1bWJpYS5lZHUiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6Il9sQml2T0EybGhqUWxnZURUMFNsNXciLCJpYXQiOjE3MTM2MzgwMzAsImV4cCI6MTcxMzY0MTYzMH0.sunrY88ZBHp0Z_MwqD5Itjcag8dYQzm_CZhrcCKpaTZUhn-gQrnQ4juT7hs9wuT9nWnEIbz13bpzFw7rngRNwEyQW8UYNMSZ8cB0JeUtdaT043-bQ12n7jm4vjE7eInKgFAjIXzJUwxiqRgTlXi_FLLmUBsfbVyfTV-A1kgXi0yWFyPwOKA_zc1afNLjIbjOJhiXOjufF5354iBDtiYRzwR17lSvYGboByyXyFmT_4zhrAxTAQm62dNn5bkWFHzzErtLZ6o9iNCHUE84UzFMgtl4aGZtpGi4Y3znBb3PTzTee9g6To_fJMEsp2vNPC2lXYBIq834uKfqX9tTHsqR5w",
+    "token_expiry": "2024-04-20T19:33:49Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/home/sv2637/.config/gcloud/config_sentinel"
+  }
+}
+2024-04-20 18:33:50,070 INFO     ___FILE_ONLY___ 
+
+2024-04-20 18:33:50,070 DEBUG    root            SDK update checks are disabled.
+2024-04-20 18:33:50,075 DEBUG    root            Metrics reporting process started...

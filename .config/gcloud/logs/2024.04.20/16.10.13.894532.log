@@ -1,0 +1,8 @@
+2024-04-20 16:10:13,895 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2024-04-20 16:10:13,898 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'print_access_token']
+2024-04-20 16:10:13,900 DEBUG    root            Running [gcloud.auth.print-access-token] with arguments: []
+2024-04-20 16:10:13,916 DEBUG    root            Chosen display Format:value(token)
+2024-04-20 16:10:13,917 INFO     root            Display format: "value(token)"
+2024-04-20 16:10:13,954 INFO     ___FILE_ONLY___ ya29.a0Ad52N39N2TwydoJC3fAQUw-9_e09RSuP-DyLYC0W9JcSiUMD1bQUXblos1x0PhaqvIoq1Jvvnh_cRd0PWuMKRMOD1aL4NmJQHG2Aewm4Y0CD_JlYs1TCqLW3DUJJP4uVp9OJjW6kKu5be05eI_yjQxGNM2CsSF5LfEY8Om-aswaCgYKATwSARESFQHGX2MixUUsk5IK7pTEJ14CV_5OhQ0177
+
+2024-04-20 16:10:13,954 DEBUG    root            SDK update checks are disabled.

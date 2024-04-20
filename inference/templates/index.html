@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MNIST Digit Predictor</title>
+</head>
+<body>
+    <h1>Upload an MNIST Image</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="imageInput" name="image" required>
+        <button type="submit">Predict</button>
+    </form>
+    <h2>Prediction: <span id="predictionResult">None</span></h2>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

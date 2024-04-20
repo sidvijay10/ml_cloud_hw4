@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: mnist-training-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: mnist-training-container
+        image: gcr.io/ml-cloud-hw4-final/mnist-training:latest
+        volumeMounts:
+        - name: mnist-model-volume
+          mountPath: "/mnt/mnist_model" # This must match the directory in your Python script
+      volumes:
+      - name: mnist-model-volume
+        persistentVolumeClaim:
+          claimName: mnist-model-pvc
+      restartPolicy: Never
+  backoffLimit: 4

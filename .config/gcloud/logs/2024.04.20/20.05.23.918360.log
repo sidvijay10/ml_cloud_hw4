@@ -1,0 +1,29 @@
+2024-04-20 20:05:23,920 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-04-20 20:05:23,922 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2024-04-20 20:05:23,924 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2024-04-20 20:05:23,947 DEBUG    root            Chosen display Format:default json
+2024-04-20 20:05:23,947 INFO     root            Display format: "default json"
+2024-04-20 20:05:23,985 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "core": {
+        "account": "sv2637@columbia.edu",
+        "disable_usage_reporting": "False",
+        "project": "ml-cloud-hw4-final"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0Ad52N3-oFEngu4cPBKiru9_wmtIz-0hAQfqfAtaA_MwtO10g_C35g6-RdLCqNl0gIEou5lLCz82bxt0eT1_davvy6EV4nTgzMAq9UVK-kUx59ZdTAAxFr-pl-Wa05V7eaMx6dKaaNmEHiOeJSsH5kPsES2e2hYWcMyhVUugrOgaCgYKARUSARESFQHGX2MiwDHsBMFZnWLZ9h8x5Y3sxA0177",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjZjZTExYWVjZjllYjE0MDI0YTQ0YmJmZDFiY2Y4YjMyYTEyMjg3ZmEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEyODI4NTE1Njk4MTEzNjI3MDY4IiwiaGQiOiJjb2x1bWJpYS5lZHUiLCJlbWFpbCI6InN2MjYzN0Bjb2x1bWJpYS5lZHUiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IjVrOE5rV0pyMlhVbEFrRUh3MDcxbmciLCJpYXQiOjE3MTM2NDM1MTEsImV4cCI6MTcxMzY0NzExMX0.vPBfOMHigt7ybbXWW2h7F_SKbe8LUmx2kMBV9nX1NYxLVMnmKvVik2y7NVQDCXKl9kDgDM1fQgb_IxaP1ceSJ520IM-NsXdebK5SsWzjiAc5vYf0pUJtFUD9KzATlu9Rbs9yQ_cWvtW98oYvdv-YbMovfTZ5UukfTh_fu5Oxoh6po2XiJq9vxCPDHKcfcfqPsRvEdhDd8GoEu-MipR0mmGVrPMvYJ4tUgC-_uJxJxFRzGjjw29orXkhKXv1DPchb5okIoedp51juVuR0VqgKVKayfGZWe9Wb2xVO8TQe9rglC3XqYolQdeZxdNw-TOQSWzuJ7O6Bk_8fmvSpTLOdpQ",
+    "token_expiry": "2024-04-20T21:05:10Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/home/sv2637/.config/gcloud/config_sentinel"
+  }
+}
+2024-04-20 20:05:23,986 INFO     ___FILE_ONLY___ 
+
+2024-04-20 20:05:23,986 DEBUG    root            SDK update checks are disabled.
+2024-04-20 20:05:23,989 DEBUG    root            Metrics reporting process started...
