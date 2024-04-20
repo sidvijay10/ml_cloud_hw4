@@ -9,11 +9,9 @@ from PIL import Image
 import io
 from flask_cors import CORS
 
-# Define the Flask application
 app = Flask(__name__, static_folder='static', template_folder='templates')
 CORS(app)
 
-# Define the Classifier class (as defined in your training script)
 class Classifier(nn.Module):
     def __init__(self):
         super(Classifier, self).__init__()
@@ -32,13 +30,11 @@ class Classifier(nn.Module):
         x = F.log_softmax(self.fc4(x), dim=1)
         return x
 
-# Initialize the model and load the saved weights
 model = Classifier()
-model_path = '/mnt/mnist_model/mnist.pth'  # Ensure this is the path where your model is saved
+model_path = '/mnt/mnist_model/mnist.pth'
 model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
 model.eval()
 
-# Define a transform to normalize the data for inference
 transform = transforms.Compose([
     transforms.Grayscale(num_output_channels=1),  # MNIST is grayscale
     transforms.Resize((28, 28)),  # Resize the image to 28x28 as expected by the model
@@ -60,7 +56,6 @@ def static_files(path):
     return send_from_directory('static', path)
 
 
-# Define the route for inference
 @app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST':
@@ -82,7 +77,6 @@ def predict():
         # Return the prediction as JSON
         return jsonify({'prediction': prediction})
 
-# Run the Flask app
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
 
