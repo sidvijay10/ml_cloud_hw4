@@ -58,6 +58,3 @@ curl -X POST -F 'image=@six.png' http://34.29.4.121/predict
 
 This command sends an image named `six.png` (which should be a digit image) located in the current directory to the inference service. The service will return the digit recognized in the image.
 
----
-
-This README should help new users or contributors understand the structure of your project and how to interact with the deployed model. It's also good practice to include additional sections as needed, such as requirements for running the project locally, versioning information, and authorship or licensing details.
