@@ -7,17 +7,14 @@ from torch.utils.data import DataLoader
 import os
 
 
-# Define a transform to normalize the data
 transform = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize((0.5,), (0.5,))
 ])
 
-# Download and load the training data
 trainset = datasets.MNIST('~/.pytorch/MNIST_data/', download=True, train=True, transform=transform)
 trainloader = DataLoader(trainset, batch_size=64, shuffle=True)
 
-# Define the neural network structure
 class Classifier(nn.Module):
     def __init__(self):
         super(Classifier, self).__init__()
@@ -37,12 +34,10 @@ class Classifier(nn.Module):
         
         return x
 
-# Create the network, define the criterion and optimizer
 model = Classifier()
 criterion = nn.NLLLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.003)
 
-# The training loop
 epochs = 15
 for e in range(epochs):
     running_loss = 0
@@ -59,8 +54,7 @@ for e in range(epochs):
         print(f"Epoch {e+1}/{epochs}.. "
               f"Training loss: {running_loss/len(trainloader)}")
 
-# Save the model to the mounted PVC
-model_path = '/mnt/mnist_model/mnist.pth'  # You will mount your PVC to this path.
+model_path = '/mnt/mnist_model/mnist.pth' 
 os.makedirs(os.path.dirname(model_path), exist_ok=True)
 torch.save(model.state_dict(), model_path)
 
